@@ -1,0 +1,26 @@
+[init]
+	defaultBranch = main
+[http]
+	sslBackend = schannel
+
+# Added line 9 to $ on 20231002
+[diff]
+    tool = bc4
+	colorMoved = zebra
+[difftool "bc4"]
+    cmd = \"C:\\Program Files\\Beyond Compare 4\\BCompare.exe\" \"$LOCAL\" \"$REMOTE\"
+[merge]
+    tool = bc4
+[mergetool "bc4"]
+    cmd = \"C:\\Program Files\\Beyond Compare 4\\BCompare.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\"
+[user]
+	email = nathaniel.donat@roadrunner.com
+	name = Callophrys
+[safe]
+	directory = D:/Users/Squeaks/Documents/WindowsPowerShell
+	directory = D:/Dev
+	directory = D:/Dev/ripgrep
+[pull]
+	rebase = true
+[fetch]
+	prune = true
